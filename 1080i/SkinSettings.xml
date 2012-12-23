@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<window id="56">
+<window>
   <defaultcontrol always="true">50</defaultcontrol>
-  <allowoverlay>no</allowoverlay>
+  
   <controls>
     <include>MiniBackground</include>
     <include>MediaHeader</include>
@@ -174,7 +174,7 @@
             <label2>$LOCALIZE[305]</label2>
             <onclick>Skin.ToggleSetting(ViewOptions_Hide)</onclick>
           </item>
-          <item id="6" description="Poster view modes">
+          <!--<item id="6" description="Poster view modes">
             <visible>Skin.HasSetting(PostersHide)</visible>
 			<label>$LOCALIZE[20343]</label>
             <label2>$LOCALIZE[31992]</label2>
@@ -185,7 +185,7 @@
 			<label>$LOCALIZE[20343]</label>
             <label2>$LOCALIZE[31991]</label2>
             <onclick>Skin.ToggleSetting(PostersHide)</onclick>
-          </item>
+          </item>-->
           <item id="7" description="Additional view modes">
             <visible>Skin.HasSetting(AddViews)</visible>
 			<label>31993</label>
@@ -339,7 +339,7 @@
         <aspectratio align="center" aligny="bottom">keep</aspectratio>
         <texture>help/OptionsMenuOFF.png</texture>
       </control>
-      <control type="image" description="Menu">
+      <!--<control type="image" description="Menu">
         <visible>Container(50).HasFocus(6) + !Skin.HasSetting(PostersHide)</visible>
         <animation effect="fade" time="200">VisibleChange</animation>
         <posx>120</posx>
@@ -358,7 +358,7 @@
         <height>384</height>
         <aspectratio>keep</aspectratio>
         <texture>help/Banner.jpg</texture>
-      </control>
+      </control>-->
       <control type="image" description="Views">
         <visible>Container(50).HasFocus(7)</visible>
         <animation effect="fade" time="200">VisibleChange</animation>
