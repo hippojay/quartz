@@ -558,6 +558,11 @@
         <ondown>-</ondown>
         <include>Sublist</include>
         <content>
+          <item id="0" description="LiveTV">
+            <visible>Skin.HasSetting(PVR_Enabled)</visible>
+            <label>31502</label>
+            <onclick>ActivateWindow(PVR)</onclick>
+          </item>		
           <item id="0" description="Artists">
             <visible>!Skin.HasSetting(plexbmc)</visible>
             <visible>!Skin.HasSetting(Music1) + Library.HasContent(Music)</visible>
@@ -1007,11 +1012,6 @@
         <ondown>-</ondown>
         <include>Sublist</include>
         <content>
-          <item id="0" description="LiveTV">
-            <visible>Skin.HasSetting(PVR_Enabled)</visible>
-            <label>31502</label>
-            <onclick>ActivateWindow(PVR)</onclick>
-          </item>
           <item id="1" description="Weather">
             <visible>!Skin.HasSetting(plexbmc)</visible>
 			<visible>!Skin.HasSetting(Addons1)</visible>
@@ -1292,7 +1292,7 @@
           </item>
           <item id="3" description="Music">
             <visible>Control.IsVisible(303)</visible>
-            <label fallback="2">$INFO[Skin.String(MusicName)]</label>
+            <label fallback="2">Live TV</label>
             <onclick>SetFocus(303)</onclick>
           </item>
           <item id="4" description="Pictures">
