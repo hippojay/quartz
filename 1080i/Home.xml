@@ -1172,7 +1172,12 @@
             <label>446</label>
             <onclick>ActivateWindow(1112)</onclick>
           </item>
-          <item id="8" description="Quit">
+          <item id="14" description="PleXBMC Refresh">
+			<label>Refresh</label>
+            <onclick>XBMC.RunScript(plugin.video.plexbmc,cacherefresh)</onclick>
+			<visible>Skin.HasSetting(plexbmc)</visible>
+		  </item>
+		  <item id="8" description="Quit">
             <visible>!Skin.HasSetting(XBMC4) + IsEmpty(Skin.String(shutdown))</visible>
             <label fallback="13009">$VAR[QuitLabel2]</label>
             <onclick>ActivateWindow(shutdownmenu)</onclick>
